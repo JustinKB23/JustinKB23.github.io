@@ -1,0 +1,172 @@
+.navbar {
+    background-color: #403E3F;
+    margin-bottom: 50px;
+}
+
+.max-navbar {
+    max-width: 1200px;
+}
+.lblue{
+    color:#22B7F2;
+}
+
+.mblue{
+    color:#22A2F2;
+}
+
+.dblue{
+    color:#2793F2;
+}
+
+/*Logo Color*/
+.navbar-brand{
+    color:#22B7F2;
+}
+
+/*Nav color*/
+.navbar ul li a {
+    color:#22B7F2;
+}
+
+/*Changes the color of the hamburger*/
+.navbar-toggler {
+    background-color:#2793F2;
+}
+
+.nav-element{
+    margin: 0 20px;
+}
+
+body {
+    background-color: #403E3F;
+}
+
+.hightext{
+    padding-top: 110px;
+    text-align: center;
+}
+
+.button {
+    background-color:#22B7F2; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: #0D0D0D; 
+    color: #22B7F2; 
+    border: 2px solid #22B7F2;
+    border-radius: 12px;
+  }
+
+  .button1:hover {
+    background-color: #2793F2;
+    color: white;
+  }
+
+/* Fixes the width of the section so it leaves space on the sides*/
+.fixed-m {
+    margin: 0 auto;
+}
+
+.mybox1{
+    border-top: 1px solid #22B7F2;
+    border-left: 1px solid #22B7F2;
+}
+
+.mybox2{
+    border-bottom: 1px solid #22B7F2;
+    border-right: 1px solid #22B7F2;
+}
+
+.mybox3{
+    border-right: 1px solid #22B7F2;
+}
+
+img {
+    width: 100%;
+}
+
+.mainimg{
+    padding:20px;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin: 10px 30px;
+}
+
+.sectiontitle{
+    color:#22B7F2;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.skillsbox{
+    background-color: #BFD9DC;
+    text-align: center;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.stitle{
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.stext {
+    padding: 10px;
+}
+
+footer hr {
+    color: #2793F2;
+    height: 3px;
+}
+
+.tleft{
+    padding-left: 50px;
+    text-align: left;
+    color:#2793F2;
+}
+.tcenter{
+    text-align: center;
+    color:#2793F2;
+}
+
+.tright{
+    padding-right: 50px;
+    text-align: right;
+    color:#2793F2;
+}
+/* Breakpoint*/
+@media only screen and (min-width: 768px) {
+    .icons {
+        width: 50px;
+        height: 50px;
+        margin: 10px 60px;
+    }
+
+   }
+@media only screen and (min-width: 992px) {
+    .icons {
+        width: 50px;
+        height: 50px;
+        margin: 40px 0px;
+    }
+
+    .mybox3{
+        border-right: 0px;
+        border-bottom: 1px solid #22B7F2;
+    }
+   }
