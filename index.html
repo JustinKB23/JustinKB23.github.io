@@ -8,6 +8,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!--Link to Google Font Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
     <!--Link to my style sheet-->
     <link rel="stylesheet" href="mystyle.css">
 
@@ -16,10 +21,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <!--            NAVBAR              -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg">
         <!-- removed bg-body-tertiary -->
-        <div class="container-fluid max-navbar">
-            <a class="navbar-brand" href="#">Logo Here</a>
+        <div class="container-fluid max-navbar interfont">
+            <a class="navbar-brand interfont" href="#">Justin Broughal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,15 +34,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item nav-element">
-                        <a class="nav-link" href="about.html">About Me</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item nav-element">
-                        <a class="nav-link" href="resume.html">My Resume</a>
+                        <a class="nav-link" href="#resume">My Resume</a>
                     </li>
                     <li class="nav-item nav-element">
-                    </li>
-                    <li class="nav-item nav-element">
-                        <a class="nav-link" href="projects.html">My Projects</a>
+                        <a class="nav-link" href="#projects">My Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true"></a>
@@ -50,113 +53,212 @@
 <body>
 
     <!-- First Section - Highlight Section-->
-    <section class="fixed-m container">
-        <div class="row">
-            <div class="col-12 col-lg-6 mybox1">
-                <div class="hightext">
-                    <h2 class="lblue">Justin Broughal</h2>
-                    <h5 class="mblue">Future Software Engineer</h5>
-                    <p class="dblue">Just some random text about me and who I am and what my dreams are in my future. Hope you enjoy!</p>
-                    <button class="button button1">Learn More</button>
+    <section class="interfont highbox">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 mybox1">
+                    <div class="hightext">
+                        <h2 class="lblue">Future Software Engineer</h2>
+                        <h5 class="mblue">Based in New York</h5>
+                        <p class="dblue">Just some random text about me and who I am and what my dreams are in my future. Hope you enjoy!</p>
+                        <button class="button button1 interfont">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 mybox3">
+                    <img src="img/selfpic.png" class="mainimg roundedge" width="400" height="500">
+                </div>
+                <div class="col-12 col-lg-1 mybox2">
+                    <a href="https://www.linkedin.com/in/justin-broughal-836b22233/"><img src="img/linkedin.png" class="icons"></a>
+                    <a href="https://github.com/JustinKB23"><img src="img/github.png" class="icons"></a>
+                    <a href="https://www.instagram.com/"><img src="img/instagram.png" class="icons"></a>
+                    <a href="https://twitter.com/?lang=en"><img src="img/twitter.png" class="icons"></a>
                 </div>
             </div>
-            <div class="col-12 col-lg-5 mybox3">
-                <img src="img/justinb.jpg" class="mainimg" width="400" height="500">
+        </div>
+    </section>
+
+
+    <!--Second Section - About-->
+    <section id="about"></section>
+    <br>
+
+    <section>
+        <div class="fixed-m interfont">
+            <div class="interfont">
+                <h1 class="sectiontitle">About Me</h1>
+                <div class="titlecaption">
+                    <h5 class="dblue">I am a 26 year old college student graduating from Mercy University this Spring.</h5>
+                    <h5 class="dblue">Some of my hobbies are...</h5>
+                </div>
             </div>
-            <div class="col-12 col-lg-1 mybox2">
-                <a href=#><img src="img/linkedin.png" class="icons"></a>
-                <a href=#><img src="img/github.png" class="icons"></a>
-                <a href=#><img src="img/instagram.jpg" class="icons"></a>
-                <a href=#><img src="img/twitter.png" class="icons"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 card hobbybox drop" style="width: 18rem;">
+                        <img src="img/basketball.jpg" class="card-img-top">
+                        <div class="card-body">
+                        <p class="card-text">I like to play basketball in my free time while also watching any basketball games.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 card hobbybox drop" style="width: 18rem;">
+                        <img src="img/coding.jpg" class="card-img-top">
+                        <div class="card-body">
+                        <p class="card-text">I like to code or build any new projects when I am on my computer.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 card hobbybox drop" style="width: 18rem;">
+                        <img src="img/vgames.jpg" class="card-img-top">
+                        <div class="card-body">
+                        <p class="card-text">I have always been into video games since I was little.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!--Second Section - Skills-->
-    <section class="fixed-m container">
-        <div class="sectiontitle">
-            <h2>Skills</h2>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Python</h4>
-                    <p class="stext">Capable of using many different data structures and algorithms. Used Python to create a educational game that you can see in my projects page. Capable of solving multiple coding problems with.</p>
-                </div>
+    <!--Third Section - Skills-->
+    <section id="skills" class="fixed-m interfont highbox">
+        <div class="container">
+            <div class="sectiontitle2 interfont">
+                <h1 class="lblue">Skills</h1>
             </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">C++</h4>
-                    <p class="stext">My first programming language I learned. I first learned Object Orientated Programming and Data Structures/Algorithms in C++. Created multiple card games using C++.</p>
+            <div class="row">
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/python.png" class="sicon">
+                        <h4 class="stitle">Python</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Java</h4>
-                    <p class="stext">Using JavaFX I was able to create a virtual world game using Java. You can view the game in my projects page. I am able to solve multiple high level problems using Java.</p>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/cpp.png" class="sicon">
+                        <h4 class="stitle">C++</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Database</h4>
-                    <p class="stext">Ability to create resilient databases for large datasets. Using technologies such as MySQL for my Java Project as well as a functioning work scheduler for a small swim school company. </p>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/java.png" class="sicon">
+                        <h4 class="stitle">Java</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Operating Systems</h4>
-                    <p class="stext">Proficient in multiple Operating Systems such as Windows, MacOS, Linux, Ubuntu. Capable of writing scripts in command line terminal.</p>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/mysql.png" class="sicon">
+                        <h4 class="stitle">Database</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Web Design</h4>
-                    <p class="stext">Proficient in HTML/CSS/Javascript. Used to create this website as well as other technologies like Wordpress for other projects.</p>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/linux.png" class="sicon">
+                        <h4 class="stitle">Operating Systems</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Frameworks</h4>
-                    <p class="stext">Capable of using different frameworks such as, Django, Flask, Ruby on Rails, Angular, and Bootstrap. Used for multiple projects.</p>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/html5.png" class="sicon">
+                        <h4 class="stitle">Web Design</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-xl-3">
-                <div class="skillsbox">
-                    <h4 class="stitle">Leadership</h4>
-                    <p class="stext">Leader for multiple big projects in a group setting. My biggest project was leading a group to create a website for a small business.</p>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/react.png" class="sicon">
+                        <h4 class="stitle">Frameworks</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="skillsbox">
+                        <img src="img/wordpress.png" class="sicon">
+                        <h4 class="stitle">Wordpress</h4>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <!--Third Section - Footer-->
+    <!--Fourth Section - Resume-->
+    <section id="resume"></section>
+    <br>
+    <section>
+        <div class="fixed-m container interfont">
+            <div class="interfont">
+                <h1 class="sectiontitle">Resume</h1>
+                <h4 class="titlecaption mblue">You can download and see my full resume below!</h3>
+                <div class="titlecaption">
+                    <a href="/img/Justin_Broughal_Updated_Resume_1.pdf" download="/img/Justin_Broughal_Updated_Resume_1"><button class="button button1 interfont">My Resume!</button></a>
+                </div>
+                <p>I AM GOING TO PUT MORE INFO ABOUT MY RESUME HERE NOT JUST A LINK</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Fifth Section - Projects-->
+    <section id="projects"></section>
+    <br>
+    <section>
+        <div class="fixed-m highbox interfont">
+            <div class="container">
+                <div class="sectiontitle2 interfont">
+                    <h2>My Project</h2>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-lg-4">
+                            <h1>Math Quest  </h1>
+                        </div>
+                        <div class="col-12 col-md-9 col-lg-8">
+                            <h3>Python, Pygames</h3>
+                            <h5>Fall 2023</h5>
+                            <p>This was a 2D educational platform game that allows the users to traverse through a 2D world and solve math problems. The math problems will 
+                                differentiate depending on the grade level selected at the start menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-lg-4">
+                            <h1>Online Web Design  </h1>
+                        </div>
+                        <div class="col-12 col-md-9 col-lg-8">
+                            <h3>HTML/CSS, WordPress, NameCheap</h3>
+                            <h5>Spring 2024</h5>
+                            <p>Created a website for a business consultant company called MADS Consultation. Using Figma to come up with a design and creating it using Wordpress
+                                on a NameCheap domain. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-lg-4">
+                            <h1>Java Platform Game </h1>
+                        </div>
+                        <div class="col-12 col-md-9 col-lg-8">
+                            <h3>Java, JavaFX, MySQL</h3>
+                            <h5>Spring 2022</h5>
+                            <p>This was a virtual game from a top-down perspective that allows the user to traverse through an office as the life of a computer scientist
+                                trying to survive from ghosts. You can shoot your weapon and survive as long as you can! The score is then added to a database to keep track of 
+                                other players.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
     <footer>
         <hr>
-        <div class="row">
+        <div class="row interfont">
             <div class="col-12 col-md-4 tleft">
                 <p>2024 Copyright</p>
             </div>
             <div class="col-12 col-md-4 tcenter">
-                <p>Justin Broughal</p>
-            </div>
-            <div class="col-12 col-md-4 tright">
-                <h5>Navigation</h5>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item nav-element">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item nav-element">
-                        <a class="nav-link" href="about.html">About Me</a>
-                    </li>
-                    <li class="nav-item nav-element">
-                        <a class="nav-link" href="resume.html">My Resume</a>
-                    </li>
-                    <li class="nav-item nav-element">
-                        <a class="nav-link" href="projects.html">My Projects</a>
-                    </li>
-                </ul>
+                <h2>Justin Broughal</h2>
             </div>
         </div>
     </footer>

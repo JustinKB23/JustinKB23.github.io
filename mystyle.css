@@ -1,3 +1,11 @@
+.interfont{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
 .navbar {
     background-color: #403E3F;
     margin-bottom: 50px;
@@ -7,15 +15,15 @@
     max-width: 1200px;
 }
 .lblue{
-    color:#22B7F2;
+    color:#FFFFFF;
 }
 
 .mblue{
-    color:#22A2F2;
+    color:#03396c;
 }
 
 .dblue{
-    color:#2793F2;
+    color:#03396c;
 }
 
 /*Logo Color*/
@@ -38,11 +46,18 @@
 }
 
 body {
-    background-color: #403E3F;
+    background-color: #FFFFFF;
+}
+
+.highbox{
+    background-color: #2793F2;
+    width: auto;
+    padding: 50px 0px;
 }
 
 .hightext{
     padding-top: 110px;
+    padding-left: 50px;
     text-align: center;
 }
 
@@ -61,9 +76,9 @@ body {
   }
 
   .button1 {
-    background-color: #0D0D0D; 
+    background-color: #FFFFFF; 
     color: #22B7F2; 
-    border: 2px solid #22B7F2;
+    border: 2px solid #0D0D0D;
     border-radius: 12px;
   }
 
@@ -73,30 +88,44 @@ body {
   }
 
 /* Fixes the width of the section so it leaves space on the sides*/
-.fixed-m {
-    margin: 0 auto;
-}
 
+/* if I want box edges
 .mybox1{
-    border-top: 1px solid #22B7F2;
-    border-left: 1px solid #22B7F2;
+    border-top: 1px solid #0D0D0D;
+    border-left: 1px solid #0D0D0D;
 }
 
 .mybox2{
-    border-bottom: 1px solid #22B7F2;
-    border-right: 1px solid #22B7F2;
+    border-bottom: 1px solid #0D0D0D;
+    border-right: 1px solid #0D0D0D;
 }
 
 .mybox3{
-    border-right: 1px solid #22B7F2;
+    border-right: 1px solid #0D0D0D;
 }
-
+*/
 img {
     width: 100%;
 }
 
+.roundedge{
+    border-radius: 50px;
+}
+
 .mainimg{
     padding:20px;
+    width: auto;
+    max-width: 100%;
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.cardimg{
+    padding: 10px;
+}
+.drop{
+    filter: drop-shadow(30px 10px 4px #22B7F2);
 }
 
 .icons {
@@ -106,27 +135,50 @@ img {
 }
 
 .sectiontitle{
-    color:#22B7F2;
+    color:#2793F2;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.sectiontitle2{
+    color:#FFFFFF;
     text-align: center;
     text-decoration: underline;
     margin-top: 100px;
     margin-bottom: 30px;
 }
 
+.titlecaption{
+    text-align: center;
+}
+
+.hobbybox{
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 75px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
 .skillsbox{
-    background-color: #BFD9DC;
+    background-color: #FFFFFF;
     text-align: center;
     margin: 10px;
-    border-radius: 25px;
+    padding: 30px;
+    border-radius: 100%;
 }
 
 .stitle{
+    color: #22B7F2;
     text-decoration: underline;
-    padding-top: 10px;
+    padding: 10px 0px;
 }
 
-.stext {
-    padding: 10px;
+.sicon{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px;
 }
 
 footer hr {
@@ -165,8 +217,14 @@ footer hr {
         margin: 40px 0px;
     }
 
+    .hightext{
+        text-align: left;
+    }
+
+    /*If i want box edges
     .mybox3{
         border-right: 0px;
-        border-bottom: 1px solid #22B7F2;
+        border-bottom: 1px solid #0D0D0D;
     }
+    */
    }
