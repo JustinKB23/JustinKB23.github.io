@@ -1,3 +1,11 @@
+.interbold{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size:30px;
+}
 .interfont{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -6,9 +14,23 @@
     font-variation-settings: "slnt" 0;
 }
 
+.intertitle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 50px;
+}
 .navbar {
     background-color: #403E3F;
     margin-bottom: 50px;
+    top: -100%;
+    transition: all .5s;
+}
+
+.navbar-scrolled{
+    top: 0;
 }
 
 .max-navbar {
@@ -49,10 +71,84 @@ body {
     background-color: #FFFFFF;
 }
 
+
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: .2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+
+section .wave.wave4{
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: .7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    
+}
+
+@keyframes animate2 {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+    
+}
+
+.highlight{
+    position: relative;
+    background-color: #2793F2;
+    width: auto;
+    padding: 20px 0px 200px 0px;
+    overflow: hidden;
+    margin:-50px 0px 100px 0px;
+}
+
 .highbox{
+    position: relative;
     background-color: #2793F2;
     width: auto;
     padding: 50px 0px;
+    overflow: hidden;
 }
 
 .hightext{
@@ -61,6 +157,64 @@ body {
     text-align: center;
 }
 
+.postcard {
+    flex-wrap: wrap;
+    display: flex;
+    
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+
+    &.dark {
+		background-color: #03396c;
+	}
+    a {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+}
+.postcard_title{
+    padding: 10px 0px 0px 10px;
+}
+.postcard_caption{
+    padding: 0px 0px 0px 10px;
+}
+.postcard_text{
+    padding: 25px 0px 0px 10px;
+}
+.t-dark {
+    color: #18151f;
+}
+
+.postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+	padding-top: 0;
+  }
+
+  .tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 50px 5px 5px 0;
+    cursor: default;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
 .button {
     background-color:#22B7F2; 
     border: none;
@@ -87,23 +241,7 @@ body {
     color: white;
   }
 
-/* Fixes the width of the section so it leaves space on the sides*/
 
-/* if I want box edges
-.mybox1{
-    border-top: 1px solid #0D0D0D;
-    border-left: 1px solid #0D0D0D;
-}
-
-.mybox2{
-    border-bottom: 1px solid #0D0D0D;
-    border-right: 1px solid #0D0D0D;
-}
-
-.mybox3{
-    border-right: 1px solid #0D0D0D;
-}
-*/
 img {
     width: 100%;
 }
@@ -137,14 +275,12 @@ img {
 .sectiontitle{
     color:#2793F2;
     text-align: center;
-    text-decoration: underline;
     margin-top: 100px;
     margin-bottom: 30px;
 }
 .sectiontitle2{
     color:#FFFFFF;
     text-align: center;
-    text-decoration: underline;
     margin-top: 100px;
     margin-bottom: 30px;
 }
@@ -209,6 +345,18 @@ footer hr {
         margin: 10px 60px;
     }
 
+    .intertitle{
+        font-size: 75px;
+    }
+
+    .postcard{
+        flex-wrap: inherit;
+    }
+    .postcard__img{
+        max-width: 300px;
+        max-height: 100%;
+        transition: transform 0.3s ease;
+    }
    }
 @media only screen and (min-width: 992px) {
     .icons {
@@ -221,10 +369,17 @@ footer hr {
         text-align: left;
     }
 
-    /*If i want box edges
-    .mybox3{
-        border-right: 0px;
-        border-bottom: 1px solid #0D0D0D;
+    .highlight{
+        padding: 200px 0px 200px 0px;
     }
-    */
+    
+    
    }
+
+   @media only screen and (min-width: 1200px) {
+    .intertitle{
+        font-size: 100px;
+    }
+
+   }
+
