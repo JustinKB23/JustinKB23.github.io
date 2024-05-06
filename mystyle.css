@@ -13,7 +13,14 @@
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
-
+.intertitle1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 50px;
+}
 .intertitle{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -21,6 +28,7 @@
     font-style: normal;
     font-variation-settings: "slnt" 0;
     font-size: 50px;
+    margin-bottom: 50px;;
 }
 .navbar {
     background-color: #403E3F;
@@ -179,6 +187,7 @@ section .wave.wave4{
 }
 .postcard_title{
     padding: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 0px;
 }
 .postcard_caption{
     padding: 0px 0px 0px 10px;
@@ -348,6 +357,9 @@ footer hr {
     .intertitle{
         font-size: 75px;
     }
+    .intertitle1{
+        font-size: 75px;
+    }
 
     .postcard{
         flex-wrap: inherit;
@@ -378,6 +390,9 @@ footer hr {
 
    @media only screen and (min-width: 1200px) {
     .intertitle{
+        font-size: 100px;
+    }
+    .intertitle1{
         font-size: 100px;
     }
 
