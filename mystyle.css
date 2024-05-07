@@ -13,6 +13,15 @@
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
+
+.interskills{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 50px;
+}
 .intertitle1{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -168,7 +177,6 @@ section .wave.wave4{
 .postcard {
     flex-wrap: wrap;
     display: flex;
-    
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
     border-radius: 10px;
     margin: 0 0 2rem 0;
@@ -183,8 +191,10 @@ section .wave.wave4{
         color: inherit;
         text-decoration: none;
       }
-      
+    
 }
+
+
 .postcard_title{
     padding: 10px 0px 0px 10px;
     margin: 10px 0px 0px 0px;
@@ -250,7 +260,29 @@ section .wave.wave4{
     color: white;
   }
 
+.skillicon{
+    margin: 50px 0;
+    text-align: right;
+}
 
+.skilltitle{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.skilltitle2{
+    margin: 50px 0;
+    text-align: left;
+}
+
+.restitle{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.resright{
+    text-align: right;
+}
 img {
     width: 100%;
 }
@@ -279,6 +311,11 @@ img {
     width: 50px;
     height: 50px;
     margin: 10px 30px;
+    transition: transform 250ms ease-in;
+}
+
+.icons:hover {
+    transform: translateY(-10px);
 }
 
 .sectiontitle{
@@ -321,9 +358,18 @@ img {
 }
 
 .sicon{
-    width: 100px;
-    height: 100px;
-    margin: 10px 0px;
+    width: 125px;
+    height: 125px;
+    margin: 10px 15px;
+    text-align: right;
+    transition: transform 250ms ease-in-out;
+}
+
+.sicon:hover{
+    transform: translateY(-10px);
+}
+.edu{
+    margin-bottom:45px;
 }
 
 footer hr {
@@ -332,20 +378,73 @@ footer hr {
 }
 
 .tleft{
-    padding-left: 50px;
-    text-align: left;
-    color:#2793F2;
+    text-align: center;
+}
+
+.contactme{
+    margin: 30px 0;
 }
 .tcenter{
     text-align: center;
-    color:#2793F2;
 }
 
-.tright{
-    padding-right: 50px;
-    text-align: right;
-    color:#2793F2;
+
+.contacthead{
+    text-align: center;
+    font-size:30px;
 }
+
+.input-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin:15px 0;
+    padding: 0 15px;
+    outline: none;
+}
+
+.input-field:focus, .input-field:valid{
+    border-bottom: 2px solid #03396c;
+}
+
+.input-group label{
+    position:absolute;
+    top: 25px;
+    left: 3px;
+    transition: .3s;
+}
+
+.input-field:focus ~ label,.input-field:valid ~ label{
+    top: 10px;
+    font-size: 12px;
+    color:#03396c;
+}
+
+.input-submit{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: #03396c;
+    color:#FFFFFF;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .4s ease-out;
+}
+
+.input-submit:hover{
+    box-shadow: 0 1px 10px rgb(0,0,0,0.83);
+}
+
 /* Breakpoint*/
 @media only screen and (min-width: 768px) {
     .icons {
@@ -369,6 +468,15 @@ footer hr {
         max-height: 100%;
         transition: transform 0.3s ease;
     }
+    .tleft{
+        text-align: left;
+    
+    }
+
+    .tcenter{
+        text-align: left;
+    }
+    
    }
 @media only screen and (min-width: 992px) {
     .icons {
